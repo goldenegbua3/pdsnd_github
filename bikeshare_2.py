@@ -9,6 +9,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 # the months available in the data are listed below
 months = ['january', 'february', 'march', 'april', 'may', 'june']
+# the available days of the week are listed below
 days = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday')
 
 
@@ -102,6 +103,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
+    # note that this fuction will call the get_filter_city(), get_filter_month() and the get_filter_day() functions
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = get_filter_city()
@@ -111,7 +113,7 @@ def get_filters():
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day = get_filter_day()
 
-    print('-'*60)
+    print('-'*90)
     
     print(' Analyzing statistics for:  ', city)
     print('Month: ', month)
@@ -176,7 +178,7 @@ def time_stats(df):
     print('Most Common Hour:', Most_common_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*60)
+    print('-'*90)
 
 
 def station_stats(df):
@@ -201,7 +203,7 @@ def station_stats(df):
     print("Most frequent start-end combination of stations is: " + most_common_start_end_combination)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*60)
+    print('-'*90)
 
 
 def trip_duration_stats(df):
@@ -219,7 +221,7 @@ def trip_duration_stats(df):
     print('Mean travel time:', mean_travel_time/60, " Minutes")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*60)
+    print('-'*90)
 
 
 def user_stats(df):
@@ -259,7 +261,7 @@ def user_stats(df):
       print("\nMost Common Birth Year:\nNo available data.")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*60)
+    print('-'*90)
 
 
 def display_data(df):
@@ -280,7 +282,7 @@ def display_data(df):
             break
             
             
-    print('-'*60)
+    print('-'*90)
 
 
 def main():
