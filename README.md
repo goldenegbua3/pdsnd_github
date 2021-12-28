@@ -17,5 +17,9 @@ For this project, I had to write a Python script. To help guide my work, a templ
     washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+I would not have been able to complete this project successfuly if not for the Udacity classroom resources and knowledge from the following links:
+www.stackoverflow.com
+https://pandas.pydata.org/docs/
+https://docs.python.org/3/tutorial/controlflow.html
+Also, this repo was forked from: https://github.com/udacity/pdsnd_github.git
 
