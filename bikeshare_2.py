@@ -262,7 +262,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*90)
 
-
+pd.set_option('display.max_columns', 200)
 def display_data(df):
     """
     The funtion accepts user responses  and returns raw data of the dataset, 5 rows at a time.
